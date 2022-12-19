@@ -1,24 +1,14 @@
 ﻿using FactoryPatternSample;
+using FactoryPatternSample.Factory;
 
 CardType cardType = CardType.Gold;
-CreditCard cardDetails = null;
+CreditCard cardDetails = CreditCardFactory.GetCreditCardDetails(cardType);
 
-if (cardType == CardType.Standard)
-{
-    cardDetails = new CreditCardStandard();
-}
-else if (cardType == CardType.Silver)
-{
-    cardDetails = new CreditCardSilver();
-}
-else if (cardType == CardType.Gold)
-{
-    cardDetails = new CreditCardGold();
-}
+
 if (cardDetails != null)
 {
     Console.WriteLine("CardType : " + cardDetails.GetCardType());
-    Console.WriteLine("CreditLimit : " + cardDetails.GetCreditLimit());
+	Console.WriteLine("CreditLimit : " + cardDetails.GetCreditLimit());
     Console.WriteLine("AnnualCharge :" + cardDetails.GetAnnualCharge());
 }
 else
