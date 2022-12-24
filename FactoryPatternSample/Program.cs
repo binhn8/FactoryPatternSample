@@ -1,8 +1,8 @@
 ﻿using FactoryPatternSample;
 using FactoryPatternSample.Factory;
 
-CardType cardType = CardType.Gold;
-CreditCard cardDetails = CreditCardFactory.GetCreditCardDetails(cardType);
+var creditCard = new CreditCardStandardFactory();
+CreditCard cardDetails = creditCard.CreateCreditCard();
 
 
 if (cardDetails != null)
