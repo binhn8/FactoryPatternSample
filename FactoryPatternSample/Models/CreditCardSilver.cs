@@ -1,6 +1,6 @@
 ﻿namespace FactoryPatternSample
 {
-	class CreditCardSilver:CreditCard
+	class CreditCardSilver:ICreditCard
 	{
 		public CardType GetCardType()
 		{

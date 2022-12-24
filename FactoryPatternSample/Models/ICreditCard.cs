@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryPatternSample
 {
-    public interface CreditCard
+    public interface ICreditCard
     {
         CardType GetCardType();
         int GetCreditLimit();

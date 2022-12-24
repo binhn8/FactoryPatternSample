@@ -2,8 +2,8 @@
 {
 	public abstract class CreditCardFactory
 	{
-		protected abstract CreditCard CreateNewCreditCard();
-		public CreditCard CreateCreditCard()
+		protected abstract ICreditCard CreateNewCreditCard();
+		public ICreditCard CreateCreditCard()
 		{
 			return this.CreateNewCreditCard();
 		}

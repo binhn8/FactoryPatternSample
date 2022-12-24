@@ -2,7 +2,7 @@
 using FactoryPatternSample.Factory;
 
 var creditCard = new CreditCardStandardFactory();
-CreditCard cardDetails = creditCard.CreateCreditCard();
+ICreditCard cardDetails = creditCard.CreateCreditCard();
 
 
 if (cardDetails != null)
